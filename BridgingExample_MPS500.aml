@@ -1,0 +1,2185 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CAEXFile xmlns="http://www.dke.de/CAEX" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="3.0" FileName="BridgingExample_MPS500.aml" xsi:schemaLocation="http://www.dke.de/CAEX CAEX_ClassModel_V.3.0.xsd">
+  <SuperiorStandardVersion>AutomationML 2.1</SuperiorStandardVersion>
+  <SourceDocumentInformation OriginName="at-2026-bridging-example" OriginID="fpd-pt-mps500-0.2" OriginVersion="0.2.0" LastWritingDateTime="2026-09-06T16:42:36.6716584+02:00" />
+  <ExternalReference Path="VDI_FPD_DomainLibrary_v0.7.aml" Alias="VDI_FPD_DomainLibrary" />
+  <ExternalReference Path="ISO_PT_DomainLibrary_v0.2.aml" Alias="ISO_PT_DomainLibrary" />
+  <ExternalReference Path="OMG_DD_AttributeTypeLib_v0.1.aml" Alias="OMG_DD" />
+  <ExternalReference Path="AutomationML_ObjectReferences_AttributeTypeLib_AMLEd2_1.1.1-beta.aml" Alias="ObjectReferences" />
+  <ExternalReference Path="https://9t4kqL7NX8JsW6o@automationml.ovgu.de/public.php/webdav/AutomationML_Base_Libraries_AMLEd2_2.11.0.aml" Alias="AutomationMLBaseLibrariesAMLEd22_11_0" />
+  <InstanceHierarchy Name="IH_FPD_ProcessView" ID="{DA4F2263-1B6C-4607-9A1F-F173E2D8160D}">
+    <Version>1.0.0</Version>
+    <InternalElement Name="Manufacture_Cylinder" ID="{59a22d3e-2c62-4618-a060-d36136eb3e54}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Process">
+      <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refAbstractObj">
+        <Value>11022dc6-cdf0-4108-b543-05b83c1cbdec</Value>
+      </Attribute>
+      <InternalElement Name="Cylinder" ID="{bc95dc22-f824-408f-a7dd-f085f19020ca}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>bc95dc22-f824-408f-a7dd-f085f19020ca</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>445</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>460</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{11312f36-717f-44d2-9ca1-fae0a0b2f77f}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>470</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>510</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>470</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>540</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>680</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>540</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_FlowIn" ID="{f61cbfe7-b473-4e8a-8845-39e2e5bf712b}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>470</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>460</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Create_Hole" ID="{f3ee1c6e-1a33-4e51-b136-a13f0a92a6c4}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_ProcessOperator">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>f3ee1c6e-1a33-4e51-b136-a13f0a92a6c4</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Create_Hole</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>395</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>349</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refProcess" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refDetailObj" />
+        <ExternalInterface Name="FPD_FlowOut" ID="{a480334d-3f55-4988-8b9d-7e2426929177}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>470</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>429</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_Usage" ID="{ffbf2f95-4ed1-47af-8ed2-b528681aafb8}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>545</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>389</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_FlowIn" ID="{e6004aa5-1597-44ce-be25-e13e5220f0c5}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>470</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>349</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_ProcessOperator" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process" />
+      </InternalElement>
+      <InternalElement Name="Cylinder" ID="{bcc485fd-a580-4965-8a9a-c765dc9e0fd4}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>bcc485fd-a580-4965-8a9a-c765dc9e0fd4</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>445</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>250</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_FlowOut" ID="{7e630053-c825-41f0-85b1-337a93af703d}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>470</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>300</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_FlowIn" ID="{262921b0-7924-4958-bb86-27dce26586fd}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>470</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>250</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Distribute_Cylinder" ID="{b3e0373d-f35c-407b-8c75-200bc74de992}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_ProcessOperator">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>b3e0373d-f35c-407b-8c75-200bc74de992</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Distribute_Cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>395</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>104</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refProcess" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refDetailObj" />
+        <ExternalInterface Name="FPD_FlowOut" ID="{21e6d9f7-e383-4dbb-96bb-d84e71af0ef8}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>470</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>184</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_Usage" ID="{5b07d5ce-43b1-455c-bba5-91e11937cb4d}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>545</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>144</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_FlowIn" ID="{30dc9cbf-7adb-4cc7-b869-0670663be42a}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>470</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>104</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_ProcessOperator" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process" />
+      </InternalElement>
+      <InternalElement Name="Distribute_Finished_Good" ID="{1a484e69-f9aa-4f72-aec9-1317d5998397}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_ProcessOperator">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>1a484e69-f9aa-4f72-aec9-1317d5998397</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Distribute_Finished_Good</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>605</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>820</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refProcess" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refDetailObj" />
+        <ExternalInterface Name="FPD_FlowOut" ID="{1d765e64-26b8-43f7-bec8-4176483cd17d}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>900</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_Usage" ID="{c4a6afe3-19fa-4cf5-b68f-aedb3fbfa8af}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>755</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>860</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_FlowIn" ID="{6af4db56-9196-4de6-adf7-2fe3affd440b}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>820</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_ProcessOperator" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process" />
+      </InternalElement>
+      <InternalElement Name="Piston" ID="{4811aa3c-6e66-4cc8-af2e-d0de739c3a8b}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>4811aa3c-6e66-4cc8-af2e-d0de739c3a8b</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Piston</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>845</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>445</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{e1703e50-075f-4b79-aee6-fe0933301f5a}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>870</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>495</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>870</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>538</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>680</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>538</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn" ID="{216d141e-35f0-4871-aa6c-f28ad228b6a4}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>870</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>445</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Spring" ID="{29029d54-ff4e-4b1d-8de4-8ca258122e7a}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>29029d54-ff4e-4b1d-8de4-8ca258122e7a</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Spring</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>725</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>445</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{79e8cf0e-ce95-470e-898a-4afbe2b12f64}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>750</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>495</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>750</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>538</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>680</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>538</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn" ID="{1814b9a2-04f1-4539-b9ed-bd5764e39543}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>750</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>445</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Lid" ID="{ad68918e-c9ca-4f5c-b16a-1cfa5adcde50}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>ad68918e-c9ca-4f5c-b16a-1cfa5adcde50</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Lid</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>605</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>445</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{251424dd-5cd4-4305-aaf2-5c396fc5d04d}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>630</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>495</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>630</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>538</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>680</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>538</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn" ID="{02ed5873-31f8-483c-ab1c-545de0e477d7}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>630</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>445</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Pneumatic_Cylinder" ID="{47f5caf5-0b06-4a72-bdee-1616a5bae094}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>47f5caf5-0b06-4a72-bdee-1616a5bae094</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Pneumatic_Cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>655</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>725</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_FlowOut" ID="{8be9e48d-fc31-42c9-b493-ae2292f163b2}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>775</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_FlowIn" ID="{a472e6ec-7523-44ee-b6d5-a2eb922d41fb}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>725</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Assemble_Parts" ID="{fb218aca-3a65-431b-9a0e-db998cc7bebd}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_ProcessOperator">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>fb218aca-3a65-431b-9a0e-db998cc7bebd</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Assemble_Parts</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>605</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refProcess" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refDetailObj" />
+        <ExternalInterface Name="FPD_FlowOut" ID="{e8fe1163-e77d-487d-afe8-263a601aa506}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>660</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_Usage" ID="{e0cf8486-5c7d-403d-bb63-78295fee6861}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>755</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>620</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn" ID="{2618cd1b-3592-43f6-a72d-13eab9d8b6e7}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn_2" ID="{41719ddf-d2d5-4d26-94f1-15c41c1b885e}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn_3" ID="{07fe920a-ca9c-47e1-97a6-4e1cb5c5c987}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn_4" ID="{fc6be495-badc-4810-ade7-9998149aa90e}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_ProcessOperator" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process" />
+      </InternalElement>
+      <InternalElement Name="Pneumatic_cylinder" ID="{2716ed0f-7de6-b35c-8cfe-1ab5752d8b6a}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>d20dd2aa-4dcf-4f8c-8ba4-cb092786c6e6</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Pneumatic_cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>655</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>985</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj">
+          <Value>d20dd2aa-4dcf-4f8c-8ba4-cb092786c6e6</Value>
+        </Attribute>
+        <ExternalInterface Name="FPD_FlowIn" ID="{c06760e1-02f5-4db1-81c0-051d43a716d2}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>680</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>985</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Distribute_Parts" ID="{53f21f10-368e-4b28-857d-f217e15e1115}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_ProcessOperator">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>53f21f10-368e-4b28-857d-f217e15e1115</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Distribute_Parts</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>665</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>200</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refProcess" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refDetailObj" />
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{bb31b0e3-3605-4902-9dd7-f64403995e4f}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>740</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>280</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>740</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>363</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>630</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>363</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowOut_2" ID="{81195ca2-6f56-44d6-8a94-4710521e961c}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>740</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>280</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>740</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>363</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>750</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>363</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowOut_3" ID="{0a648fc3-3a7a-4b7b-87b3-d6a209877834}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>740</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>280</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>740</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>363</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>870</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>363</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_Usage" ID="{c724ea4d-ec0f-4acb-9434-9991aa8b3ccd}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>815</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>240</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn" ID="{dca25774-7adc-4560-9d1d-6d8be007a1ca}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>740</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>200</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn_2" ID="{a2152ab7-41e8-4ed0-9e6f-a1d938b850eb}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>740</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>200</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn_3" ID="{e7aa99c7-c06a-47f7-bac9-cfef77b878b4}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>740</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>200</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_ProcessOperator" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process" />
+      </InternalElement>
+      <InternalElement Name="Piston" ID="{5b1421a4-5248-2d50-947e-c204cfdd09bc}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>7d6b71fa-579f-4987-9849-b6ae887159d6</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Piston</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>845</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>-15</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj">
+          <Value>7d6b71fa-579f-4987-9849-b6ae887159d6</Value>
+        </Attribute>
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{36feeb8e-90d2-4799-840b-bc88fb0ec075}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>870</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>35</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>870</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>100</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>740</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>100</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Spring" ID="{9b0c8cb4-f7e9-cb50-865f-ca059af2edf6}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>2f133709-1e29-46c4-a354-68e736e15df9</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Spring</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>715</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>-15</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj">
+          <Value>2f133709-1e29-46c4-a354-68e736e15df9</Value>
+        </Attribute>
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{e7008bc8-3559-4781-b2aa-165bd361ec8c}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>740</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>35</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Lid" ID="{18d89e4b-7988-ae5a-8435-3ac1db755b63}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>00c6cb8f-3b4c-4bc4-a86a-ee6d447ff262</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Lid</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>585</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>-15</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj">
+          <Value>00c6cb8f-3b4c-4bc4-a86a-ee6d447ff262</Value>
+        </Attribute>
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{4844f6f9-71f1-4414-92e0-3eb5eafef5fc}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>610</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>35</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>610</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>100</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>740</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>100</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Cylinder" ID="{fa75a122-4c6d-3d50-a7f1-629012cba4cf}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>74e05628-ac30-48e6-bc78-410461790c78</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>445</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>-15</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj">
+          <Value>74e05628-ac30-48e6-bc78-410461790c78</Value>
+        </Attribute>
+        <ExternalInterface Name="FPD_FlowOut" ID="{3d3e6126-b557-405a-a3cc-0cfc26ecd2f2}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>470</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>35</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="FinishedGood_Distributor" ID="{c30b33c5-9668-40ff-85d9-f1f4203ae32e}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_TechnicalResource">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>c30b33c5-9668-40ff-85d9-f1f4203ae32e</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>FinishedGood_Distributor</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1135</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>820</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <ExternalInterface Name="FPD_Usage" ID="{fcbb8f67-e4eb-4f0d-9832-dfffe0d32e44}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1135</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>860</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="PlantEquipmentLink" ID="{9DA611BE-C2F3-4C4A-8C10-AB6E53D3084B}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" /><RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_TechnicalResource" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      </InternalElement>
+      <InternalElement Name="AssemblySystem" ID="{dfe93d01-0b35-48f0-93fa-319a2796c37a}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_TechnicalResource">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>dfe93d01-0b35-48f0-93fa-319a2796c37a</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>AssemblySystem</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1135</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <ExternalInterface Name="FPD_Usage" ID="{436d5def-9c50-4962-a39b-e5d7fada8d99}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1135</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>620</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="PlantEquipmentLink" ID="{7C584208-3701-4DE2-9EF3-0B3A4FF135C0}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" /><RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_TechnicalResource" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      </InternalElement>
+      <InternalElement Name="DrillingSystem" ID="{67afba47-0ace-4c43-b5d0-a4f2781b8f4c}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_TechnicalResource">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>67afba47-0ace-4c43-b5d0-a4f2781b8f4c</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>DrillingSystem</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1125</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>349</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <ExternalInterface Name="FPD_Usage" ID="{8c684b88-7cdf-4325-a13d-46d1ffb8bace}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1125</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>389</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="PlantEquipmentLink" ID="{844D44C9-D4F9-4A97-BD88-1AE0F6FC6020}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" /><RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_TechnicalResource" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      </InternalElement>
+      <InternalElement Name="Part_Distributor" ID="{edd6d131-9ef1-4a70-b2fe-9e0d741210ec}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_TechnicalResource">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>edd6d131-9ef1-4a70-b2fe-9e0d741210ec</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Part_Distributor</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1125</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>200</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <ExternalInterface Name="FPD_Usage" ID="{2952bd1e-7cda-4a45-a058-8e13970d49bd}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1125</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>240</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_TechnicalResource" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      </InternalElement>
+      <InternalElement Name="Cylinder_Distributor" ID="{7b77b19f-190e-4e93-be51-e3e11a187c2a}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_TechnicalResource">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>7b77b19f-190e-4e93-be51-e3e11a187c2a</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Cylinder_Distributor</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1125</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>104</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <ExternalInterface Name="FPD_Usage" ID="{1cc85c41-1724-4d76-a7f5-360e06521c2c}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1125</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>144</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="PlantEquipmentLink" ID="{F00904BB-8305-4AAA-A2A5-64DED90AF559}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" /><RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_TechnicalResource" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      </InternalElement>
+      <InternalElement Name="SystemLimit_Manufacture_Cylinder" ID="{9591f40c-7f49-4c15-9a97-dda81a439e99}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_SystemLimit">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string" />
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Manufacture_Cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>350</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>5</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>750</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>1005</Value>
+          </Attribute>
+        </Attribute>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_SystemLimit" />
+      </InternalElement>
+      <InternalLink RefPartnerSideA="{1cc85c41-1724-4d76-a7f5-360e06521c2c}" RefPartnerSideB="{5b07d5ce-43b1-455c-bba5-91e11937cb4d}" Name="Cylinder_Distributor_uses_Distribute_Cylinder" ID="{37337c1f-958c-4e2a-a087-d407776b876b}" />
+      <InternalLink RefPartnerSideA="{2952bd1e-7cda-4a45-a058-8e13970d49bd}" RefPartnerSideB="{c724ea4d-ec0f-4acb-9434-9991aa8b3ccd}" Name="Part_Distributor_uses_Distribute_Parts" ID="{963969ec-5920-4d84-a466-af2dfd8afd9c}" />
+      <InternalLink RefPartnerSideA="{8c684b88-7cdf-4325-a13d-46d1ffb8bace}" RefPartnerSideB="{ffbf2f95-4ed1-47af-8ed2-b528681aafb8}" Name="DrillingSystem_uses_Create_Hole" ID="{e99e7903-fcdc-4ed3-84bb-42778a67106e}" />
+      <InternalLink RefPartnerSideA="{436d5def-9c50-4962-a39b-e5d7fada8d99}" RefPartnerSideB="{e0cf8486-5c7d-403d-bb63-78295fee6861}" Name="AssemblySystem_uses_Assemble_Parts" ID="{d01588af-3717-4a7a-86e8-2863496d3690}" />
+      <InternalLink RefPartnerSideA="{fcbb8f67-e4eb-4f0d-9832-dfffe0d32e44}" RefPartnerSideB="{c4a6afe3-19fa-4cf5-b68f-aedb3fbfa8af}" Name="FinishedGood_Distributor_uses_Distribute_Finished_Good" ID="{4c4131fd-4c49-41f6-8a51-e56911228141}" />
+      <InternalLink RefPartnerSideA="{3d3e6126-b557-405a-a3cc-0cfc26ecd2f2}" RefPartnerSideB="{30dc9cbf-7adb-4cc7-b869-0670663be42a}" Name="Cylinder_to_Distribute_Cylinder" ID="{adcec01b-e2db-4d1b-b582-599cd0fa2754}" />
+      <InternalLink RefPartnerSideA="{4844f6f9-71f1-4414-92e0-3eb5eafef5fc}" RefPartnerSideB="{dca25774-7adc-4560-9d1d-6d8be007a1ca}" Name="Lid_to_Distribute_Parts" ID="{bdff2a5f-bfb8-47a0-bbe0-25823a01da84}" />
+      <InternalLink RefPartnerSideA="{e7008bc8-3559-4781-b2aa-165bd361ec8c}" RefPartnerSideB="{a2152ab7-41e8-4ed0-9e6f-a1d938b850eb}" Name="Spring_to_Distribute_Parts" ID="{64e65e7f-249a-4343-9fec-c0000eca4e8b}" />
+      <InternalLink RefPartnerSideA="{36feeb8e-90d2-4799-840b-bc88fb0ec075}" RefPartnerSideB="{e7aa99c7-c06a-47f7-bac9-cfef77b878b4}" Name="Piston_to_Distribute_Parts" ID="{0c44fd99-6028-44df-80b0-519ce529a24d}" />
+      <InternalLink RefPartnerSideA="{bb31b0e3-3605-4902-9dd7-f64403995e4f}" RefPartnerSideB="{02ed5873-31f8-483c-ab1c-545de0e477d7}" Name="Distribute_Parts_to_Lid" ID="{e301cb67-1663-40fa-abb4-e812e9aaedf2}" />
+      <InternalLink RefPartnerSideA="{81195ca2-6f56-44d6-8a94-4710521e961c}" RefPartnerSideB="{1814b9a2-04f1-4539-b9ed-bd5764e39543}" Name="Distribute_Parts_to_Spring" ID="{70a869b9-6a30-41ab-8db9-3ffa6aca114b}" />
+      <InternalLink RefPartnerSideA="{0a648fc3-3a7a-4b7b-87b3-d6a209877834}" RefPartnerSideB="{216d141e-35f0-4871-aa6c-f28ad228b6a4}" Name="Distribute_Parts_to_Piston" ID="{0bd985f6-ed39-4fa8-94c3-af14866418a6}" />
+      <InternalLink RefPartnerSideA="{1d765e64-26b8-43f7-bec8-4176483cd17d}" RefPartnerSideB="{c06760e1-02f5-4db1-81c0-051d43a716d2}" Name="Distribute_Finished_Good_to_Pneumatic_cylinder" ID="{80902a52-13c8-4b4d-8736-73a173a7928a}" />
+      <InternalLink RefPartnerSideA="{e8fe1163-e77d-487d-afe8-263a601aa506}" RefPartnerSideB="{a472e6ec-7523-44ee-b6d5-a2eb922d41fb}" Name="Assemble_Parts_to_Pneumatic_Cylinder" ID="{db63e225-2a79-43d3-8de6-a3ce55fa53c0}" />
+      <InternalLink RefPartnerSideA="{11312f36-717f-44d2-9ca1-fae0a0b2f77f}" RefPartnerSideB="{2618cd1b-3592-43f6-a72d-13eab9d8b6e7}" Name="Cylinder_to_Assemble_Parts" ID="{477d104a-0e70-4acd-be36-7e1da0110363}" />
+      <InternalLink RefPartnerSideA="{251424dd-5cd4-4305-aaf2-5c396fc5d04d}" RefPartnerSideB="{41719ddf-d2d5-4d26-94f1-15c41c1b885e}" Name="Lid_to_Assemble_Parts" ID="{dffc0a43-14fb-4d9b-be72-75e9adc3b080}" />
+      <InternalLink RefPartnerSideA="{79e8cf0e-ce95-470e-898a-4afbe2b12f64}" RefPartnerSideB="{07fe920a-ca9c-47e1-97a6-4e1cb5c5c987}" Name="Spring_to_Assemble_Parts" ID="{571bb4c3-aeff-4181-a92f-35bd6e5d60dc}" />
+      <InternalLink RefPartnerSideA="{e1703e50-075f-4b79-aee6-fe0933301f5a}" RefPartnerSideB="{fc6be495-badc-4810-ade7-9998149aa90e}" Name="Piston_to_Assemble_Parts" ID="{5b207314-49d5-40a5-ae6f-fa94680f592a}" />
+      <InternalLink RefPartnerSideA="{8be9e48d-fc31-42c9-b493-ae2292f163b2}" RefPartnerSideB="{6af4db56-9196-4de6-adf7-2fe3affd440b}" Name="Pneumatic_Cylinder_to_Distribute_Finished_Good" ID="{d8455f3c-2d54-42a1-9b92-bc2f47e7f552}" />
+      <InternalLink RefPartnerSideA="{21e6d9f7-e383-4dbb-96bb-d84e71af0ef8}" RefPartnerSideB="{262921b0-7924-4958-bb86-27dce26586fd}" Name="Distribute_Cylinder_to_Cylinder" ID="{157aad05-18f6-4c4a-b7e7-dbed41320a8b}" />
+      <InternalLink RefPartnerSideA="{7e630053-c825-41f0-85b1-337a93af703d}" RefPartnerSideB="{e6004aa5-1597-44ce-be25-e13e5220f0c5}" Name="Cylinder_to_Create_Hole" ID="{b3d1fb43-5ac0-445f-8c19-c27f63b5078c}" />
+      <InternalLink RefPartnerSideA="{a480334d-3f55-4988-8b9d-7e2426929177}" RefPartnerSideB="{f61cbfe7-b473-4e8a-8845-39e2e5bf712b}" Name="Create_Hole_to_Cylinder" ID="{8683eae0-a279-4b09-bf7e-b85b40c48e6e}" />
+      <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Process" />
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+    </InternalElement>
+    <InternalElement Name="SL_MPS500" ID="{997e7b06-f0bd-49af-9ed5-c0708a3735cc}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Process">
+      <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refAbstractObj" />
+      <InternalElement Name="Pneumatic_cylinder" ID="{d20dd2aa-4dcf-4f8c-8ba4-cb092786c6e6}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>d20dd2aa-4dcf-4f8c-8ba4-cb092786c6e6</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Pneumatic_cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1065</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>825</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_FlowIn" ID="{8d92ba7c-17b3-4174-ad36-6be19ebf4470}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1090</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>825</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Manufacture_Cylinder" ID="{11022dc6-cdf0-4108-b543-05b83c1cbdec}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_ProcessOperator">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>11022dc6-cdf0-4108-b543-05b83c1cbdec</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Manufacture_Cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1015</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refProcess" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refDetailObj">
+          <Value>{59a22d3e-2c62-4618-a060-d36136eb3e54}</Value>
+        </Attribute>
+        <ExternalInterface Name="FPD_FlowOut" ID="{6f260610-07e7-4141-97b8-a23897940f93}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_FlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1090</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>660</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_Usage" ID="{2ae62f80-f2ba-4089-944e-de84e99237fa}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1165</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>620</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn" ID="{cd49edbb-e380-43fb-9f9c-bf54f5b2de29}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1090</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn_2" ID="{1c0e72a9-87e4-49fc-8e3c-659cc2fff351}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1090</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn_3" ID="{0280c0f0-8fdb-43fb-9598-e81788e38818}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1090</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <ExternalInterface Name="FPD_ParallelFlowIn_4" ID="{530b224d-235f-4a6d-8c6f-d1983c9f8470}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowIn">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1090</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_ProcessOperator" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process" />
+      </InternalElement>
+      <InternalElement Name="Cylinder" ID="{74e05628-ac30-48e6-bc78-410461790c78}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>74e05628-ac30-48e6-bc78-410461790c78</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Cylinder</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>885</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>345</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{ef39c5c3-df08-4eb5-a8a2-c02ed661fa69}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>910</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>395</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>910</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>490</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>1090</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>490</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Piston" ID="{7d6b71fa-579f-4987-9849-b6ae887159d6}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>7d6b71fa-579f-4987-9849-b6ae887159d6</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Piston</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1315</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>345</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{7f929a71-53a0-4dde-b851-b0c758d84f42}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1340</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>395</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>1340</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>490</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>1090</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>490</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Spring" ID="{2f133709-1e29-46c4-a354-68e736e15df9}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>2f133709-1e29-46c4-a354-68e736e15df9</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Spring</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1155</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>345</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{fedc2087-1245-42d5-a0c5-7445c7898071}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1180</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>395</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>1180</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>490</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>1090</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>490</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="Lid" ID="{00c6cb8f-3b4c-4bc4-a86a-ee6d447ff262}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_Product">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>00c6cb8f-3b4c-4bc4-a86a-ee6d447ff262</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>Lid</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1025</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>345</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>50</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj" />
+        <ExternalInterface Name="FPD_ParallelFlowOut" ID="{d0274769-d2c6-4be8-a4d2-ed72fdac333a}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_ParallelFlowOut">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1050</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>395</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_1" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>1050</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>490</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="Waypoint_2" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Waypoint">
+            <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+              <Attribute Name="x" AttributeDataType="xs:double">
+                <Value>1090</Value>
+              </Attribute>
+              <Attribute Name="y" AttributeDataType="xs:double">
+                <Value>490</Value>
+              </Attribute>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Product" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+      </InternalElement>
+      <InternalElement Name="MPS500" ID="{31a51f9b-990e-4ba6-9337-aa8644410c2e}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_TechnicalResource">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string">
+            <Value>31a51f9b-990e-4ba6-9337-aa8644410c2e</Value>
+          </Attribute>
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>MPS500</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="Characteristics" AttributeDataType="xs:string" />
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1515</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>580</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>150</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>80</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="refBaseObj" AttributeDataType="xs:IDREF" RefAttributeType="ObjectReferences@AutomationML_ObjectReferences_AttributeTypeLib/refBaseObj"><Value>{66E2BCC7-043C-491C-A331-0D685F05B2ED}</Value></Attribute><ExternalInterface Name="FPD_Usage" ID="{b2f98ea3-bf7e-4e16-ba8b-5cddd2219538}" RefBaseClassPath="VDI_FPD_DomainLibrary@VDI_FPD_InterfaceClassLib/FPD_Usage">
+          <Attribute Name="PortCoordinate" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>1515</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>620</Value>
+            </Attribute>
+          </Attribute>
+        </ExternalInterface>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_TechnicalResource" />
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      </InternalElement>
+      <InternalElement Name="SystemLimit_SL_MPS500" ID="{dc1ee595-c70e-41f3-9e91-9c8a5235332d}" RefBaseSystemUnitPath="VDI_FPD_DomainLibrary@VDI_FPD_SystemUnitClassLib/FPD_SystemLimit">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="VDI_FPD_DomainLibrary@VDI_FPD_AttributeTypeLib/FPD_Identification">
+          <Attribute Name="uniqueIdent" AttributeDataType="xs:string" />
+          <Attribute Name="longName" AttributeDataType="xs:string" />
+          <Attribute Name="shortName" AttributeDataType="xs:string">
+            <Value>SL_MPS500</Value>
+          </Attribute>
+          <Attribute Name="versionNumber" AttributeDataType="xs:string" />
+          <Attribute Name="revisionNumber" AttributeDataType="xs:string" />
+        </Attribute>
+        <Attribute Name="ViewInformation" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Bounds">
+          <Attribute Name="position" AttributeDataType="xs:string" RefAttributeType="OMG_DD@OMG_DD_AttributeTypeLib/DD_Point">
+            <Attribute Name="x" AttributeDataType="xs:double">
+              <Value>815</Value>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double">
+              <Value>372</Value>
+            </Attribute>
+          </Attribute>
+          <Attribute Name="width" AttributeDataType="xs:double">
+            <Value>650</Value>
+          </Attribute>
+          <Attribute Name="height" AttributeDataType="xs:double">
+            <Value>475</Value>
+          </Attribute>
+        </Attribute>
+        <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_SystemLimit" />
+      </InternalElement>
+      <InternalLink RefPartnerSideA="{b2f98ea3-bf7e-4e16-ba8b-5cddd2219538}" RefPartnerSideB="{2ae62f80-f2ba-4089-944e-de84e99237fa}" Name="MPS500_uses_Manufacture_Cylinder" ID="{cbe8b4dd-b20b-401e-ae24-755feeeb2739}" />
+      <InternalLink RefPartnerSideA="{d0274769-d2c6-4be8-a4d2-ed72fdac333a}" RefPartnerSideB="{1c0e72a9-87e4-49fc-8e3c-659cc2fff351}" Name="Lid_to_Manufacture_Cylinder" ID="{fdac6498-c163-41f9-950b-db045c8d805b}" />
+      <InternalLink RefPartnerSideA="{fedc2087-1245-42d5-a0c5-7445c7898071}" RefPartnerSideB="{0280c0f0-8fdb-43fb-9598-e81788e38818}" Name="Spring_to_Manufacture_Cylinder" ID="{cf84cb26-2839-4136-9267-af1965c23982}" />
+      <InternalLink RefPartnerSideA="{7f929a71-53a0-4dde-b851-b0c758d84f42}" RefPartnerSideB="{530b224d-235f-4a6d-8c6f-d1983c9f8470}" Name="Piston_to_Manufacture_Cylinder" ID="{33a35765-fd64-46cb-83d7-3d1079f6aac0}" />
+      <InternalLink RefPartnerSideA="{ef39c5c3-df08-4eb5-a8a2-c02ed661fa69}" RefPartnerSideB="{cd49edbb-e380-43fb-9f9c-bf54f5b2de29}" Name="Cylinder_to_Manufacture_Cylinder" ID="{44aa4881-fd79-4276-b9e5-5b6ab28d0748}" />
+      <InternalLink RefPartnerSideA="{6f260610-07e7-4141-97b8-a23897940f93}" RefPartnerSideB="{8d92ba7c-17b3-4174-ad36-6be19ebf4470}" Name="Manufacture_Cylinder_to_Pneumatic_cylinder" ID="{d23f8977-a36c-4fe1-a463-c8a20cb2b954}" />
+      <RoleRequirements RefBaseRoleClassPath="VDI_FPD_DomainLibrary@VDI_FPD_RoleClassLib/FPD_Process" />
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+    </InternalElement>
+  </InstanceHierarchy>
+  <InstanceHierarchy Name="IH_PT_BehaviorView" ID="{17C743FB-5844-4AA7-9997-A9FE85494DA4}">
+    <Version>1.0.0</Version>
+    <InternalElement Name="QualityCheckControl" ID="{20987ECE-19D5-4F48-BD3F-90E52929AB0E}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Net">
+      <InternalElement Name="Idle" ID="{EE8B9AF1-B296-4BF4-AEBC-7C4B1FC442CD}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Place">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{EE8B9AF1-B296-4BF4-AEBC-7C4B1FC442CD}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Idle</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="InitialMarking" AttributeDataType="xs:nonNegativeInteger">
+          <Value>1</Value>
+        </Attribute>
+        <ExternalInterface Name="NodeArcEnd_1" ID="{0AB62654-071C-43B0-8C6C-0C70A4C890F3}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Place" />
+      </InternalElement>
+      <InternalElement Name="Start" ID="{D974C896-9DFB-447A-87D8-FDFC063E13E6}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Transition">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{D974C896-9DFB-447A-87D8-FDFC063E13E6}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Start</Value>
+          </Attribute>
+        </Attribute>
+        <ExternalInterface Name="PlantSignalLink" ID="{9E75C13C-93D8-41DB-9F97-4661B5F5D646}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+        <ExternalInterface Name="NodeArcEnd_1" ID="{87F639D1-7C1E-4982-81D8-E643C26405AB}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <ExternalInterface Name="NodeArcEnd_2" ID="{65041475-4DE2-4B18-82AF-DD76D82FBADC}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Transition" />
+      </InternalElement>
+      <InternalElement Name="Checking" ID="{14D4D4E0-4A34-43F5-91A0-59AC0D4A21AB}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Place">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{14D4D4E0-4A34-43F5-91A0-59AC0D4A21AB}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Checking</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="InitialMarking" AttributeDataType="xs:nonNegativeInteger">
+          <Value>0</Value>
+        </Attribute>
+        <ExternalInterface Name="NodeArcEnd_1" ID="{0D3A9B15-B27F-4FD2-A803-18D2BFD4DB52}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <ExternalInterface Name="NodeArcEnd_2" ID="{A5CC3FB1-24D7-4FFC-827A-71A4368B60BD}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <ExternalInterface Name="NodeArcEnd_3" ID="{00158ECC-3478-48F3-B4C0-ABD5CFAF592A}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Place" />
+      </InternalElement>
+      <InternalElement Name="Approve" ID="{7D941F90-A98D-4EE5-A326-9100C5705E3E}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Transition">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{7D941F90-A98D-4EE5-A326-9100C5705E3E}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Approve</Value>
+          </Attribute>
+        </Attribute>
+        <ExternalInterface Name="NodeArcEnd_1" ID="{57345411-1F51-402A-851E-5FD4EB995992}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <ExternalInterface Name="NodeArcEnd_2" ID="{5ED133F1-3AB5-4A74-9161-6D9B391EE35C}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <ExternalInterface Name="NodeArcEnd_3" ID="{04CFEFF8-FDA4-4924-B46A-FB740E3252A8}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Transition" />
+      </InternalElement>
+      <InternalElement Name="Reject" ID="{8904B340-C0AA-4054-B56C-3E52E050E9E2}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Transition">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{8904B340-C0AA-4054-B56C-3E52E050E9E2}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Reject</Value>
+          </Attribute>
+        </Attribute>
+        <ExternalInterface Name="NodeArcEnd_1" ID="{002940A7-C2D4-4414-9662-D92FFE3E582D}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <ExternalInterface Name="NodeArcEnd_2" ID="{789DA925-DCDD-4371-9552-07F2FB0C6A11}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <ExternalInterface Name="NodeArcEnd_3" ID="{F4D884C4-3B4F-414F-81B6-A0ABC63D9488}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Transition" />
+      </InternalElement>
+      <InternalElement Name="Approved" ID="{900E41AC-3D9E-4754-8312-AF1A6D5ECF96}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Place">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{900E41AC-3D9E-4754-8312-AF1A6D5ECF96}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Approved</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="InitialMarking" AttributeDataType="xs:nonNegativeInteger">
+          <Value>0</Value>
+        </Attribute>
+        <ExternalInterface Name="PlantSignalLink" ID="{A5AAB6A5-2554-44E2-921B-2C9699C12F98}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+        <ExternalInterface Name="NodeArcEnd_1" ID="{034A151C-8B3E-4410-AB57-CDEA82F4F8FC}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Place" />
+      </InternalElement>
+      <InternalElement Name="Rejected" ID="{E85CB386-1836-49EB-BBA2-071DC262D236}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Place">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{E85CB386-1836-49EB-BBA2-071DC262D236}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Rejected</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="InitialMarking" AttributeDataType="xs:nonNegativeInteger">
+          <Value>0</Value>
+        </Attribute>
+        <ExternalInterface Name="PlantSignalLink" ID="{238353EF-BB80-4B15-A272-CCA914AF87B0}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+        <ExternalInterface Name="NodeArcEnd_1" ID="{A3570099-F546-45F8-ACAD-017D8792A46B}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Place" />
+      </InternalElement>
+      <InternalElement Name="Result_OK" ID="{F1FBB9F2-BF93-42D0-9D02-A16B6255BBCF}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Place">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{F1FBB9F2-BF93-42D0-9D02-A16B6255BBCF}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Result_OK</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="InitialMarking" AttributeDataType="xs:nonNegativeInteger">
+          <Value>0</Value>
+        </Attribute>
+        <ExternalInterface Name="PlantSignalLink" ID="{D9A53811-41D4-4D1C-B03A-957B1D9276D7}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+        <ExternalInterface Name="NodeArcEnd_1" ID="{5D73E407-6411-45F4-9286-DC1F66F20349}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Place" />
+      </InternalElement>
+      <InternalElement Name="Result_NOK" ID="{4889D5F3-6AA4-4919-8DD1-0AF4A14142A7}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Place">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{4889D5F3-6AA4-4919-8DD1-0AF4A14142A7}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Result_NOK</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="InitialMarking" AttributeDataType="xs:nonNegativeInteger">
+          <Value>0</Value>
+        </Attribute>
+        <ExternalInterface Name="PlantSignalLink" ID="{DA49339C-5A1E-45E4-9C19-BBEB71EF8D54}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+        <ExternalInterface Name="NodeArcEnd_1" ID="{6D5679EB-DC44-4BC7-BD5F-A73D65CF20EA}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_NodeArcEnd" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Place" />
+      </InternalElement>
+      <InternalElement Name="Arc_Idle_to_Start" ID="{57D4434B-BE60-4809-8C44-97F7E4EBCE7C}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Arc">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{57D4434B-BE60-4809-8C44-97F7E4EBCE7C}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Arc_Idle_to_Start</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="Weight" AttributeDataType="xs:positiveInteger">
+          <Value>1</Value>
+        </Attribute>
+        <ExternalInterface Name="ArcSource" ID="{D9BFFAA5-366D-4552-9636-FC1CFD85B4EE}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcSource" />
+        <ExternalInterface Name="ArcTarget" ID="{6CE47A46-8C0C-4EF8-BDA5-4EEE14FFF109}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcTarget" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Arc" />
+      </InternalElement>
+      <InternalElement Name="Arc_Start_to_Checking" ID="{762F63DA-F292-45DC-B69F-ED7E81595B1A}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Arc">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{762F63DA-F292-45DC-B69F-ED7E81595B1A}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Arc_Start_to_Checking</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="Weight" AttributeDataType="xs:positiveInteger">
+          <Value>1</Value>
+        </Attribute>
+        <ExternalInterface Name="ArcSource" ID="{84AD775B-CA7A-4E40-9BB9-A113A48187E8}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcSource" />
+        <ExternalInterface Name="ArcTarget" ID="{3780946E-2A28-4F6A-82EE-4EDB9B8F9638}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcTarget" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Arc" />
+      </InternalElement>
+      <InternalElement Name="Arc_Checking_to_Approve" ID="{488BD67B-FE47-4A56-A437-150F67D9F5CF}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Arc">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{488BD67B-FE47-4A56-A437-150F67D9F5CF}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Arc_Checking_to_Approve</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="Weight" AttributeDataType="xs:positiveInteger">
+          <Value>1</Value>
+        </Attribute>
+        <ExternalInterface Name="ArcSource" ID="{6704F638-42BB-492F-946F-04C7C370A086}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcSource" />
+        <ExternalInterface Name="ArcTarget" ID="{89A98E0C-F69D-402E-82FF-5CDE319A713E}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcTarget" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Arc" />
+      </InternalElement>
+      <InternalElement Name="Arc_Checking_to_Reject" ID="{95E728B6-889E-4F8E-B2A0-3554950F55EB}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Arc">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{95E728B6-889E-4F8E-B2A0-3554950F55EB}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Arc_Checking_to_Reject</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="Weight" AttributeDataType="xs:positiveInteger">
+          <Value>1</Value>
+        </Attribute>
+        <ExternalInterface Name="ArcSource" ID="{9CC6096F-3613-47B9-8C2C-E5279D29176C}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcSource" />
+        <ExternalInterface Name="ArcTarget" ID="{BF12B698-14BD-4165-9D8A-D5BC085F8FA2}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcTarget" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Arc" />
+      </InternalElement>
+      <InternalElement Name="Arc_ResultOK_to_Approve" ID="{934B9007-E622-4D8C-A85B-37C7648B60CE}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Arc">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{934B9007-E622-4D8C-A85B-37C7648B60CE}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Arc_ResultOK_to_Approve</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="Weight" AttributeDataType="xs:positiveInteger">
+          <Value>1</Value>
+        </Attribute>
+        <ExternalInterface Name="ArcSource" ID="{901171CC-1711-4514-BAF9-DE71E8C88FBF}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcSource" />
+        <ExternalInterface Name="ArcTarget" ID="{6274AC1E-78DE-4832-8B28-38045B619B71}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcTarget" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Arc" />
+      </InternalElement>
+      <InternalElement Name="Arc_ResultNOK_to_Reject" ID="{AD11E3F6-9071-4725-BE9C-E681AB338EA8}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Arc">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{AD11E3F6-9071-4725-BE9C-E681AB338EA8}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Arc_ResultNOK_to_Reject</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="Weight" AttributeDataType="xs:positiveInteger">
+          <Value>1</Value>
+        </Attribute>
+        <ExternalInterface Name="ArcSource" ID="{278E9263-7E8C-497B-A676-A8A1DBD00101}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcSource" />
+        <ExternalInterface Name="ArcTarget" ID="{C50CF1CA-0F43-401A-B214-9A2A60418EB3}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcTarget" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Arc" />
+      </InternalElement>
+      <InternalElement Name="Arc_Approve_to_Approved" ID="{23623C50-3059-4447-A92E-3E4EA39B3AB5}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Arc">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{23623C50-3059-4447-A92E-3E4EA39B3AB5}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Arc_Approve_to_Approved</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="Weight" AttributeDataType="xs:positiveInteger">
+          <Value>1</Value>
+        </Attribute>
+        <ExternalInterface Name="ArcSource" ID="{0400498F-8E03-44C9-869F-559D98772E9A}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcSource" />
+        <ExternalInterface Name="ArcTarget" ID="{7FB06DC8-9B4E-4435-9CC9-6F1561261A0D}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcTarget" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Arc" />
+      </InternalElement>
+      <InternalElement Name="Arc_Reject_to_Rejected" ID="{40DB6CBA-1638-4E86-9B11-CB331BAE1D81}" RefBaseSystemUnitPath="ISO_PT_DomainLibrary@ISO_PT_SystemUnitClassLib/PT_Arc">
+        <Attribute Name="Identification" AttributeDataType="xs:string" RefAttributeType="ISO_PT_DomainLibrary@ISO_PT_AttributeTypeLib/PT_Identification">
+          <Attribute Name="id" AttributeDataType="xs:string">
+            <Value>{40DB6CBA-1638-4E86-9B11-CB331BAE1D81}</Value>
+          </Attribute>
+          <Attribute Name="name" AttributeDataType="xs:string">
+            <Value>Arc_Reject_to_Rejected</Value>
+          </Attribute>
+        </Attribute>
+        <Attribute Name="Weight" AttributeDataType="xs:positiveInteger">
+          <Value>1</Value>
+        </Attribute>
+        <ExternalInterface Name="ArcSource" ID="{0C8B6D94-A9FF-409E-98B9-EFCC9642C813}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcSource" />
+        <ExternalInterface Name="ArcTarget" ID="{A4F6A3B4-F0C2-4C5F-B745-957F702AD4E2}" RefBaseClassPath="ISO_PT_DomainLibrary@ISO_PT_InterfaceClassLib/PT_ArcTarget" />
+        <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Arc" />
+      </InternalElement>
+      <InternalLink RefPartnerSideA="{0AB62654-071C-43B0-8C6C-0C70A4C890F3}" RefPartnerSideB="{D9BFFAA5-366D-4552-9636-FC1CFD85B4EE}" Name="Arc_Idle_to_Start_L_src" ID="{A35C89F9-3130-48B0-81DD-CD0A0C1E0A58}" />
+      <InternalLink RefPartnerSideA="{6CE47A46-8C0C-4EF8-BDA5-4EEE14FFF109}" RefPartnerSideB="{87F639D1-7C1E-4982-81D8-E643C26405AB}" Name="Arc_Idle_to_Start_L_tgt" ID="{F1746AC1-B4A6-493D-85E0-A125A79EAC00}" />
+      <InternalLink RefPartnerSideA="{65041475-4DE2-4B18-82AF-DD76D82FBADC}" RefPartnerSideB="{84AD775B-CA7A-4E40-9BB9-A113A48187E8}" Name="Arc_Start_to_Checking_L_src" ID="{4EFF00E3-DB0C-4426-9877-57650272FB7F}" />
+      <InternalLink RefPartnerSideA="{3780946E-2A28-4F6A-82EE-4EDB9B8F9638}" RefPartnerSideB="{0D3A9B15-B27F-4FD2-A803-18D2BFD4DB52}" Name="Arc_Start_to_Checking_L_tgt" ID="{0BBDF323-335D-4ACB-BEF4-3E1AB1E1C488}" />
+      <InternalLink RefPartnerSideA="{A5CC3FB1-24D7-4FFC-827A-71A4368B60BD}" RefPartnerSideB="{6704F638-42BB-492F-946F-04C7C370A086}" Name="Arc_Checking_to_Approve_L_src" ID="{0A3032A7-67E6-4A10-B0C7-1964667F1992}" />
+      <InternalLink RefPartnerSideA="{89A98E0C-F69D-402E-82FF-5CDE319A713E}" RefPartnerSideB="{57345411-1F51-402A-851E-5FD4EB995992}" Name="Arc_Checking_to_Approve_L_tgt" ID="{905BCEF9-CACD-4C93-AC94-02977339BACE}" />
+      <InternalLink RefPartnerSideA="{00158ECC-3478-48F3-B4C0-ABD5CFAF592A}" RefPartnerSideB="{9CC6096F-3613-47B9-8C2C-E5279D29176C}" Name="Arc_Checking_to_Reject_L_src" ID="{A6D6595B-EEC1-4E76-B924-F0FE2C7A83F9}" />
+      <InternalLink RefPartnerSideA="{BF12B698-14BD-4165-9D8A-D5BC085F8FA2}" RefPartnerSideB="{002940A7-C2D4-4414-9662-D92FFE3E582D}" Name="Arc_Checking_to_Reject_L_tgt" ID="{AB4D4691-F71E-485F-8B82-E2E66D0E0DEF}" />
+      <InternalLink RefPartnerSideA="{5D73E407-6411-45F4-9286-DC1F66F20349}" RefPartnerSideB="{901171CC-1711-4514-BAF9-DE71E8C88FBF}" Name="Arc_ResultOK_to_Approve_L_src" ID="{9A08F123-B992-4C46-BDBD-CD15017D5C42}" />
+      <InternalLink RefPartnerSideA="{6274AC1E-78DE-4832-8B28-38045B619B71}" RefPartnerSideB="{5ED133F1-3AB5-4A74-9161-6D9B391EE35C}" Name="Arc_ResultOK_to_Approve_L_tgt" ID="{213D4752-39E7-47DF-91B7-9BDCE3FD11D1}" />
+      <InternalLink RefPartnerSideA="{6D5679EB-DC44-4BC7-BD5F-A73D65CF20EA}" RefPartnerSideB="{278E9263-7E8C-497B-A676-A8A1DBD00101}" Name="Arc_ResultNOK_to_Reject_L_src" ID="{EBC778AD-956A-47C4-B862-96581894214D}" />
+      <InternalLink RefPartnerSideA="{C50CF1CA-0F43-401A-B214-9A2A60418EB3}" RefPartnerSideB="{789DA925-DCDD-4371-9552-07F2FB0C6A11}" Name="Arc_ResultNOK_to_Reject_L_tgt" ID="{CD2F5F41-8BB8-4FAA-A8A8-8E5766418358}" />
+      <InternalLink RefPartnerSideA="{04CFEFF8-FDA4-4924-B46A-FB740E3252A8}" RefPartnerSideB="{0400498F-8E03-44C9-869F-559D98772E9A}" Name="Arc_Approve_to_Approved_L_src" ID="{AABAF0B0-E1EE-4B6C-96BF-19CD950A6EDE}" />
+      <InternalLink RefPartnerSideA="{7FB06DC8-9B4E-4435-9CC9-6F1561261A0D}" RefPartnerSideB="{034A151C-8B3E-4410-AB57-CDEA82F4F8FC}" Name="Arc_Approve_to_Approved_L_tgt" ID="{2E3A1ACA-9986-496A-9438-77AC97F9F23E}" />
+      <InternalLink RefPartnerSideA="{F4D884C4-3B4F-414F-81B6-A0ABC63D9488}" RefPartnerSideB="{0C8B6D94-A9FF-409E-98B9-EFCC9642C813}" Name="Arc_Reject_to_Rejected_L_src" ID="{48CA8D79-DCF4-4D6A-AE66-CCC17C4494A9}" />
+      <InternalLink RefPartnerSideA="{A4F6A3B4-F0C2-4C5F-B745-957F702AD4E2}" RefPartnerSideB="{A3570099-F546-45F8-ACAD-017D8792A46B}" Name="Arc_Reject_to_Rejected_L_tgt" ID="{B7F4AE04-83B8-4D11-B2C7-C43FB07728FC}" />
+      <RoleRequirements RefBaseRoleClassPath="ISO_PT_DomainLibrary@ISO_PT_RoleClassLib/PT_Net" />
+    </InternalElement>
+  </InstanceHierarchy>
+  <InstanceHierarchy Name="IH_MPS500_Plant" ID="{63797381-50B4-4921-B53F-0D88FAC19A8C}">
+    <Version>1.0.0</Version>
+    <InternalElement Name="MPS500" ID="{66E2BCC7-043C-491C-A331-0D685F05B2ED}">
+      <InternalElement Name="RawStorageThermometers" ID="{4731A37D-0896-4866-B21D-877657132E9A}">
+        <ExternalInterface Name="EquipmentLink" ID="{5E8E07CA-AA99-468A-96CD-E369B212C42D}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+      </InternalElement>
+      <InternalElement Name="RawStorageCylinders" ID="{48BA9631-F649-4ECA-95AC-CC1A397C2F31}">
+        <ExternalInterface Name="EquipmentLink" ID="{C34DED04-F6A0-4A6A-8B02-794B1FBC1DB0}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+      </InternalElement>
+      <InternalElement Name="ProcessingStation" ID="{B37CFB90-A341-4B34-B52C-7F7B24013CF9}">
+        <ExternalInterface Name="EquipmentLink" ID="{107B5A9E-A9FA-47FB-A7DE-EA1C0F2A1878}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+      </InternalElement>
+      <InternalElement Name="QualityCheckStation" ID="{B79C1815-5F10-4863-8869-D963BADD6D2B}">
+        <ExternalInterface Name="EquipmentLink" ID="{D8C1DD7D-F35D-4639-AA51-FFD8E9A2B770}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+        <ExternalInterface Name="Sensor_OK" ID="{47C5D501-21BF-478E-A95B-87F2BBB8422F}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+        <ExternalInterface Name="Sensor_NOK" ID="{FC59008D-33B8-4E98-9B85-45BF2DEFD69F}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+      </InternalElement>
+      <InternalElement Name="RoboticAssemblyStation" ID="{384C3195-DCD6-4F45-8899-68E6BA82C0D3}">
+        <ExternalInterface Name="EquipmentLink" ID="{26910764-2698-49CD-83B3-71B4AC595097}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+      </InternalElement>
+      <InternalElement Name="BufferStorage" ID="{1D4851A9-F0B6-4BD7-A53E-A8FE86552106}">
+        <ExternalInterface Name="EquipmentLink" ID="{E8B843D9-5380-4D46-8577-D5C0C8C2D24F}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+      </InternalElement>
+      <InternalElement Name="ShippingArea" ID="{0EE8E8C6-F6F2-4A79-9857-E8BBC82522B3}">
+        <ExternalInterface Name="EquipmentLink" ID="{26F11169-27B9-4432-BAED-C74BFB60A60C}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+      </InternalElement>
+      <InternalElement Name="Controller" ID="{36BE6063-A5DB-4844-9A42-81000E3A7B43}">
+        <ExternalInterface Name="Signal_Start" ID="{8214EFBA-CB39-4AD4-A917-CD81FFEA657A}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+        <ExternalInterface Name="Signal_Approved" ID="{A60DD678-C3E9-447F-9EC1-9F38D5594BC6}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+        <ExternalInterface Name="Signal_Rejected" ID="{5559531D-8489-46DE-BD85-87FF8797AEE3}" RefBaseClassPath="AutomationMLBaseLibrariesAMLEd22_11_0@AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+      </InternalElement>
+      <InternalLink RefPartnerSideA="{9E75C13C-93D8-41DB-9F97-4661B5F5D646}" RefPartnerSideB="{8214EFBA-CB39-4AD4-A917-CD81FFEA657A}" Name="L_PtStartTrans_to_MPS500SignalStart" ID="{7C050EDE-6D0B-45D4-86B1-2EBBAB64DDD2}" />
+      <InternalLink RefPartnerSideA="{A5AAB6A5-2554-44E2-921B-2C9699C12F98}" RefPartnerSideB="{A60DD678-C3E9-447F-9EC1-9F38D5594BC6}" Name="L_PtApprovedPlace_to_MPS500SignalApproved" ID="{38F622D1-8E2A-4CBD-98BB-78476C819481}" />
+      <InternalLink RefPartnerSideA="{238353EF-BB80-4B15-A272-CCA914AF87B0}" RefPartnerSideB="{5559531D-8489-46DE-BD85-87FF8797AEE3}" Name="L_PtRejectedPlace_to_MPS500SignalRejected" ID="{E67F1294-D3A3-431E-8BA2-9BC0D9F27B96}" />
+      <InternalLink RefPartnerSideA="{D9A53811-41D4-4D1C-B03A-957B1D9276D7}" RefPartnerSideB="{47C5D501-21BF-478E-A95B-87F2BBB8422F}" Name="L_PtResultOKPlace_to_QcSensorOK" ID="{78871858-AAEE-446E-ABF8-507D43600EF1}" />
+      <InternalLink RefPartnerSideA="{DA49339C-5A1E-45E4-9C19-BBEB71EF8D54}" RefPartnerSideB="{FC59008D-33B8-4E98-9B85-45BF2DEFD69F}" Name="L_PtResultNOKPlace_to_QcSensorNOK" ID="{2EF50B42-29C8-43ED-81BA-0DC7344519A8}" />
+    <InternalLink RefPartnerSideA="{9DA611BE-C2F3-4C4A-8C10-AB6E53D3084B}" RefPartnerSideB="{26F11169-27B9-4432-BAED-C74BFB60A60C}" Name="L_Fpd_FinishedGood_Distributor_to_ShippingArea" ID="{5C1C1362-5535-4B60-9A48-8F55D1CCC1FB}" /><InternalLink RefPartnerSideA="{7C584208-3701-4DE2-9EF3-0B3A4FF135C0}" RefPartnerSideB="{26910764-2698-49CD-83B3-71B4AC595097}" Name="L_Fpd_AssemblySystem_to_RoboticAssemblyStation" ID="{0C82A716-9A0C-4B93-8923-CFAD8E3491A7}" /><InternalLink RefPartnerSideA="{844D44C9-D4F9-4A97-BD88-1AE0F6FC6020}" RefPartnerSideB="{107B5A9E-A9FA-47FB-A7DE-EA1C0F2A1878}" Name="L_Fpd_DrillingSystem_to_ProcessingStation" ID="{1963A969-740E-4D6D-A980-1BD717D032B1}" /><InternalLink RefPartnerSideA="{F00904BB-8305-4AAA-A2A5-64DED90AF559}" RefPartnerSideB="{C34DED04-F6A0-4A6A-8B02-794B1FBC1DB0}" Name="L_Fpd_Cylinder_Distributor_to_RawStorageCylinders" ID="{0542DAC9-9D5C-4D20-B898-DCB39E5F170C}" /></InternalElement>
+  </InstanceHierarchy>
+</CAEXFile>
